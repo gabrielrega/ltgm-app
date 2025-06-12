@@ -135,19 +135,19 @@ class DynamicLTGM:
         plt.show()
 
     def get_dataframe(self):
-    """Return simulation results as a DataFrame"""
-    return pd.DataFrame({
-        'Year': self.time,
-        'GDP': self.Y,
-        'Capital_Stock': self.K,
-        'Labor_Force': self.L,
-        'TFP': self.A,
-        'Human_Capital': self.h,
-        'Output_per_Worker': self.y,
-        'Savings_Rate': self.s_array,
-        'Labor_Growth_Rate': self.n_array,
-        'Schooling_Years': self.S_array
-    })
+        """Return simulation results as a DataFrame"""
+        return pd.DataFrame({
+            'Year': self.time,
+            'GDP': self.Y,
+            'Capital_Stock': self.K,
+            'Labor_Force': self.L,
+            'TFP': self.A,
+            'Human_Capital': self.h,
+            'Output_per_Worker': self.y,
+            'Savings_Rate': self.s_array,
+            'Labor_Growth_Rate': self.n_array,
+            'Schooling_Years': self.S_array
+        })
 
 # Example Usage with Time-Varying Parameters
 if __name__ == "__main__":
